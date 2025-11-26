@@ -7,7 +7,14 @@ const puerto = 3000;
 app.use(cors());
 app.use(express.json());
 
+//prueba get
+app.get('/', (req, res) => {
+    res.json({
+        mensaje:'probando get'
+    });
+ });
 
 app.listen(puerto, () => {
     console.log(`Servidor corriendo en http://localhost:${puerto}`);
 });
+
