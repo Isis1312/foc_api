@@ -18,6 +18,4 @@ app.listen(puerto, () => {
     console.log(`Servidor corriendo en http://localhost:${puerto}`);
 });
 
-app.listen(puerto, () => {
-    console.log(`Servidor corriendo en http://localhost:${puerto}`);
-});
+
