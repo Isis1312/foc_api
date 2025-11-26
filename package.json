@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "strar": "node servidor.js",
-    "dev": "nodemon servidor.js"
+    "strar": "node src/servidor/servidor.js",
+    "dev": "nodemon src/servidor/servidor.js"
   },
   "repository": {
     "type": "git",
