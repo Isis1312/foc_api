@@ -1,34 +1,32 @@
 {
-  "name": "foc-api",
+  "name": "api15112025",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "strar": "node src/servidor/servidor.js",
-    "dev": "nodemon src/servidor/servidor.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Isis1312/foc_api.git"
+    "start": "node src/app.js",
+    "start:dev": "nodemon src/app.js",
+    "prisma:generate": "npx prisma generate",
+    "prisma:migrate": "npx prisma migrate dev",
+    "prisma:studio": "npx prisma studio",
+    "prisma:reset": "npx prisma migrate reset"
   },
   "keywords": [],
-  "author": "",
+  "author": "Zedmous",
   "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/Isis1312/foc_api/issues"
-  },
-  "homepage": "https://github.com/Isis1312/foc_api#readme",
+  "description": "",
   "dependencies": {
-    "@prisma/client": "^7.0.1",
+    "@prisma/client": "^6.19.0",
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
-    "express-validator": "^7.3.1",
-    "pg": "^8.16.3"
+    "express-validator": "^7.3.0",
+    "prisma": "^6.19.0"
   },
+  "type": "module",
   "devDependencies": {
+    "@types/node": "^24.10.1",
     "nodemon": "^3.1.11",
-    "prisma": "^7.0.1"
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
   }
 }
