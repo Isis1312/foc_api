@@ -1,5 +1,6 @@
 import { WarehausesServices } from "../servicios/warehauses.servicios.js";
 
+
 export class WarehausesController {
   constructor() { }
 
