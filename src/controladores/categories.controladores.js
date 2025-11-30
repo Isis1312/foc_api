@@ -1,4 +1,4 @@
-import { CategoriesServicio } from "../servicios/categories.servicios.js";
+import { CategoriesServices} from "../servicios/categories.servicios.js";
 
 export class CategoriesController {
   constructor() { }
