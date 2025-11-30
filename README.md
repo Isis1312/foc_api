@@ -108,3 +108,8 @@ src/
 │   └── ...
 └── config/
     └── prisma.config.js
+
+
+
+--- CREADO POR ESTUDINATES DEL 4TO SEMESTRE ---
+        --- DE INFORMATICA DE IUJO ---
