@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import { AreaController } from '../controladores/areas.controladores.js';
 
+
 const router = Router();
 const area_controller = new AreaController();
 

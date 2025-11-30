@@ -138,6 +138,37 @@ const RoleServices = {
             };
         }
     },
+    getByName: async (name) => {
+    try {
+        const role = await prisma.roles.findFirst({
+            where: {
+                name: name,
+                status: true,
+            },
+        });
+        if (!role) {
+            return {
+                message: `Rol no encontrado`,
+                status: 404,
+                data: {},
+            };
+        } else {
+            return {
+                message: `Rol encontrado`,
+                status: 200,
+                data: {
+                    role,
+                },
+            };
+        }
+    } catch (error) {
+        console.log(error);
+        return {
+            message: `Por favor contacte al administrador`,
+            status: 500,
+        };
+    }
+},
 };
 
 export { RoleServices };
