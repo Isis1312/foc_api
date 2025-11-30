@@ -1,10 +1,10 @@
-import { AreaServices} from "../servicios/areas.servicios .js";
+import { AreaServices} from "../servicios/areas.servicios.js";
 
 export class AreaController {
   constructor() { }
 
   getAll = async (req, res) => {
-    const { message, status, data } = await AreaController.getAll();
+    const { message, status, data } = await AreaServices.getAll();
 
     return res.status(status).json({
       message,
@@ -15,7 +15,7 @@ export class AreaController {
   getOne = async (req, res) => {
     const { id } = req.params;
 
-    const { message, status, data } = await AreaController.getById(Number(id));
+    const { message, status, data } = await AreaServices.getById(Number(id));
 
     return res.status(status).json({
       message,
@@ -26,7 +26,7 @@ export class AreaController {
   created = async (req, res) => {
     const areaData = req.body;
 
-    const { message, status, data } = await AreaController.create(areaData);
+    const { message, status, data } = await AreaServices.create(areaData);
 
     return res.status(status).json({
       message,
@@ -38,7 +38,7 @@ export class AreaController {
     const { id } = req.params;
     const areaData = req.body;
 
-    const { message, status, data } = await AreaController.update(Number(id), areaData);
+    const { message, status, data } = await AreaServices.update(Number(id), areaData);
 
     return res.status(status).json({
       message,
@@ -49,7 +49,7 @@ export class AreaController {
   deleted = async (req, res) => {
     const { id } = req.params;
 
-    const { message, status } = await AreaController.delete(Number(id));
+    const { message, status } = await AreaServices.delete(Number(id));
 
     return res.status(status).json({
       message
