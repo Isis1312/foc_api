@@ -51,7 +51,7 @@ Node.js 18 o superior
 
 PostgreSQL
 
-npm o yarn
+npm 
 
 1. Clonar el repositorio
 bash
@@ -60,19 +60,19 @@ cd <nombre-del-proyecto>
 
 2. Instalar dependencias bash
 npm install
-3. Configurar variables de entorno bash
 
+3. Configurar variables de entorno bash
 # Copiar el archivo de ejemplo
 cp .env.example .env
 
 
 4. Configurar la base de datos bash
-
 # Generar cliente de Prisma
 npx prisma generate
 
-# Ejecutar migraciones
-npx prisma migrate dev --name init
+# Crear nueva migración(CADA QUE SE CREE UNA TABLA NUEVA EN EL ESQUEMA EJECUTAR ESTE COMANDO)
+npx prisma migrate dev --name nombre_migracion
+
 
 
 5. Ejecutar el proyecto bash
