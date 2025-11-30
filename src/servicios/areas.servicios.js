@@ -41,7 +41,7 @@ const AreaServices = {
                     status: true,
                 },
                 include: {
-                    warehauses: true,
+                    warehause: true,
                 },
             });
             if (!areas) {
@@ -76,7 +76,7 @@ const AreaServices = {
                     warehauses_id: areaData.warehauses_id
                 },
                 include: {
-                    warehauses: true,
+                    warehause: true,
                 },
             });
             return {
@@ -106,7 +106,7 @@ const AreaServices = {
                     status: areaData.status !== undefined ? areaData.status : true,
                 },
                 include: {
-                    warehauses: true,
+                    warehause: true,
                 },
             });
             return {
